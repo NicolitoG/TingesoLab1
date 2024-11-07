@@ -25,8 +25,8 @@ pipeline{
                 dir ("back-end-1"){
                     script{
                         withDockerRegistry(credentialsId: 'docker-credentials'){
-                            bat "docker build -t nicolitog/back-end-1 ."
-                            bat "docker push nicolitog/back-end-1"
+                            bat "docker build -t nicolitog/imagenbackend:latest ."
+                            bat "docker push nicolitog/imagenbackend:latest"
                         }
                     }
                 }
