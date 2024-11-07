@@ -9,7 +9,7 @@ pipeline{
             steps{
                 checkout scmGit(branches: [[name: '*/main']], extensions:[], userRemoteConfigs: [[url: 'https://github.com/NicolitoG/TingesoLab1']])
                 dir ("back-end-1"){
-                    bat "mvn clean install"
+                    bat "mvn clean package"
                 }
             }
         }
