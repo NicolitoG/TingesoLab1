@@ -193,7 +193,7 @@ const Register = () => {
             sx={{ mt: 2 }}
             disabled={!rut ||!!rutError || !name || !salary || !birthdate}
         >
-            Registrar
+            Registrar cliente
             </button>
         </p>
         </div>
