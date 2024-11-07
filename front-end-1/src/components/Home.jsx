@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>PrestaBanco sección de crédito hipotecario test</h1>
+      <h1>PrestaBanco sección de crédito hipotecario</h1>
       <p>
         Bienvenido a PrestaBanco ingrese como cliente para simular un credito hipotecario
         o como ejecutivo para revisar los creditos hipotecarios pendientes.
