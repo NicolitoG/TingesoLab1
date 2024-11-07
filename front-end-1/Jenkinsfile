@@ -14,8 +14,8 @@ pipeline{
             steps{
                 dir("front-end-1"){
                     script{
-                        withDockerRegistry(url: 'https://index.docker.io/v1/', credentialsId: 'docker-credentials'){
-                            bat "docker build -t nicolitog/imagenfrontend:latest ."
+                        withDockerRegistry(credentialsId: 'docker-credentials'){
+                            bat "docker build --no-cache -t nicolitog/imagenfrontend:latest ."
                             bat "docker push nicolitog/imagenfrontend:latest"
                         }
                     }
