@@ -69,7 +69,7 @@ const Login = () => {
 
     return (
         <Box>
-            <h1>Iniciar Sesión :c</h1>
+            <h1>Iniciar Sesión</h1>
 
             {feedbackMessage && (
                 <Typography color={feedbackMessage.startsWith("Error") ? "error" : "primary"}>
