@@ -14,7 +14,7 @@ pipeline{
             steps{
                 dir("front-end-1"){
                     script{
-                        withDockerRegistry(credentialsId: 'docker-credentials'){
+                        withDockerRegistry(url: 'https://index.docker.io/v1/', credentialsId: 'docker-credentials'){
                             bat "docker build -t nicolitog/front-end-1 ."
                             bat "docker push nicolitog/front-end-1"
                         }
